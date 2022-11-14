@@ -20,9 +20,9 @@ export const Home = () => {
   window.addEventListener("scroll", changeNavColor);
 
   return (
-    <>
+    <div className="scrollbar scrollbar-thumb-blue-700 scrollbar-track-blue-300">
       <div
-        className={`{navbar fixed w-screen z-10 bg-transparent ${colorChange}`}
+        className={`{navbar fixed w-screen z-10 bg-transparent  ${colorChange}`}
       >
         <Navbar />
       </div>
@@ -42,7 +42,7 @@ export const Home = () => {
       <div className="footer">
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 
